@@ -1,0 +1,44 @@
+.primary-nav {
+  padding-top: .75rem;
+
+  &--pull-right {
+		@mixin atMedium {
+			float: right;
+		}
+  }
+
+  ul {
+		margin: 0;
+		padding: 0;
+		@mixin clearfix;
+	}
+
+	li {
+		list-style: none;
+		display: block;
+
+		@mixin atMedium {
+			float: left;
+			padding-right: 3rem;
+		}
+	}
+
+    a {
+      text-decoration: none;
+      color: $mainBlue;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      font-size: .9rem;
+      display: inline-block;
+      transition: color .3s ease-out;
+
+      @mixin atMedium {
+        font-size: 1rem;
+      }
+
+      &:hover {
+        color: #FFF;
+      }
+    }
+}

@@ -1,0 +1,85 @@
+.about-block {
+  padding-top: 50px;
+  background: $mainGray;
+  position: relative;
+  height: 551px;
+  margin-bottom: 3rem;
+
+    @mixin atSmall {
+      height: 700px;
+      margin-bottom: 1rem;
+    }
+
+    @mixin atMedium {
+      height: 1080px;
+      padding-top: 115px;
+      margin-bottom: 3.5rem;
+    }
+
+  &__intro-content {
+    font-size: 1.5rem;
+    color: #FFF;
+    background-color: $mainGray;
+    text-align: center;
+    letter-spacing: .05rem;
+    line-height: 1.5;
+    max-width: 17.875rem;
+    margin: 50px auto;
+
+    @mixin atSmaller {
+      max-width: 71.75rem;
+    }
+
+    @mixin atMedium {
+      font-size: 2.8125rem;
+      line-height: 1.5;
+      margin: 100px auto;
+    }
+  }
+
+  &__self-portrait {
+    position: relative;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    }
+
+  &__image {
+    position: relative;
+    max-height: 250px;
+    max-width: 1332px;
+
+    @mixin atSmaller {
+      max-height: 400px;
+      padding-right: 2%;
+    }
+
+    @mixin atSmall {
+      max-height: 800px;
+    }
+
+    @mixin atMedium {
+      max-height: 100%;
+      padding-right: 2%;
+    }
+
+}
+
+  &__title {
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: .9rem;
+    letter-spacing: .05rem;
+
+    @mixin atSmall {
+      font-size: 1rem;
+      left: 30px;
+      bottom: 0;
+      letter-spacing: .2rem;
+    }
+  }
+}

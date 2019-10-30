@@ -1,0 +1,35 @@
+.btn {
+  text-decoration: none;
+  color: $mainBlue;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  border: 2px solid $mainBlue;
+  padding: .5rem 1.5rem;
+  border-radius: 25px;
+  font-size: .9rem;
+  transition: background-color .3s ease-out;
+
+  @mixin atMedium {
+    font-size: 1rem;
+  }
+
+  &:hover {
+    background-color: rgba($mainBlue, .20);
+  }
+
+  &--solid {
+    display: block;
+    text-align: center;
+    width: 250px;
+    margin: 0 auto 2rem auto;
+
+    @mixin atSmall {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      background-color: rgba($mainBlue, .20);
+    }
+  }
+}

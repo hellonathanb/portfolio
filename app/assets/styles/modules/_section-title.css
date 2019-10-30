@@ -1,0 +1,13 @@
+.section-title {
+  font-family: aglet-sans, sans-serif;
+  font-weight: 400;
+  font-size: 1.75rem;
+  color: $mainBlue;
+  margin-bottom: 0;
+
+  @mixin atMedium {
+    font-weight: 700;
+    font-size: 3.125rem;
+    margin-bottom: 23.9px;
+  }
+}

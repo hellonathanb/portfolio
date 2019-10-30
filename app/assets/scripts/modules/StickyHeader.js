@@ -5,7 +5,7 @@ class StickyHeader {
   constructor() {
     this.lazyImages = $(".lazyload");
     this.siteHeader = $(".site-header");
-    this.headerTriggerElement = $(".large-hero__title");
+    this.headerTriggerElement = $(".about-block__intro-content");
     this.createHeaderWaypoint();
     this.refreshWaypoints();
   }
@@ -22,9 +22,9 @@ class StickyHeader {
       element: this.headerTriggerElement[0],
       handler: function(direction) {
         if (direction == "down") {
-          that.siteHeader.addClass("site-header--dark");
+          that.siteHeader.addClass("site-header--scroll");
         } else {
-          that.siteHeader.removeClass("site-header--dark");
+          that.siteHeader.removeClass("site-header--scroll");
         }
       }
     });

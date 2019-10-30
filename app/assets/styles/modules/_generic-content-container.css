@@ -1,0 +1,50 @@
+.generic-content-container  {
+
+  &--p-t {
+    padding-top: 1em;
+  }
+
+  &__btn-container {
+    background-color: $mainGray;
+    padding: 3rem 3rem 1rem 3rem;
+
+    @mixin atSmall {
+      padding: 3rem;
+    }
+  }
+
+  p {
+    font-size: .9rem;
+    line-height: 1.8;
+    padding-bottom: 1rem;
+    max-width: 650px;
+    margin-top: 0;
+
+    @mixin atMedium {
+      font-size: 1rem;
+
+    }
+  }
+
+  h2 {
+    font-family: aglet-sans, sans-serif;
+    font-size: 1.75rem;
+    color: $mainBlue;
+    font-weight: 400;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+
+    @mixin atMedium {
+      font-size: 1.875rem;
+      margin-top: 3.5rem;
+    }
+  }
+
+  h6 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0;
+    letter-spacing: .08rem;
+
+  }
+}
