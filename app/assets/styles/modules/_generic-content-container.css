@@ -4,6 +4,18 @@
     padding-top: 1em;
   }
 
+  &--white {
+    color: #fff;
+  }
+
+  &--center {
+    text-align: center;
+    margin-left:auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding-bottom: 0;
+  }
+
   &__btn-container {
     background-color: $mainGray;
     padding: 3rem 3rem 1rem 3rem;
@@ -46,5 +58,22 @@
     margin: 0;
     letter-spacing: .08rem;
 
+  }
+
+  a {
+    text-decoration: none;
+    color: $linkTeal;
+    font-size: .9rem;
+    line-height: 1.8;
+    max-width: 650px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    display: block;
+
+    @mixin atMedium {
+      font-size: 1rem;
+
+    }
   }
 }

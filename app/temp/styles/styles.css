@@ -371,6 +371,7 @@ img {
   margin-right: auto;
   padding-right: 20px;
   padding-left: 20px;
+  padding-bottom: 1px;
 }
 
 .site-header {
@@ -719,11 +720,11 @@ img {
 
 .about-block__title {
     position: absolute;
-    bottom: -10px;
+    bottom: -5px;
     left: 10px;
     font-weight: 600;
     text-transform: uppercase;
-    font-size: .9rem;
+    font-size: .7rem;
     letter-spacing: .05rem;
   }
 
@@ -738,17 +739,20 @@ img {
 	}
 
 .page-section {
-  padding: 2rem 0 1rem 0;
-  margin: 1rem 0 0 0;
+  padding: 2rem 0 3rem 0;
 }
 
 @media (min-width: 800px) {
 
 .page-section {
-    padding: 3rem 0 2rem 0;
-    margin: 1rem 0
+    padding: 3rem 0 2rem 0
 }
 	}
+
+.page-section--dark {
+    background-color: #2A2B2D;
+    margin-top: -5px;
+  }
 
 .section-title {
   font-family: aglet-sans, sans-serif;
@@ -769,6 +773,18 @@ img {
 
 .generic-content-container--p-t {
     padding-top: 1em;
+  }
+
+.generic-content-container--white {
+    color: #fff;
+  }
+
+.generic-content-container--center {
+    text-align: center;
+    margin-left:auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding-bottom: 0;
   }
 
 .generic-content-container__btn-container {
@@ -822,6 +838,25 @@ img {
     letter-spacing: .08rem;
 
   }
+
+.generic-content-container a {
+    text-decoration: none;
+    color: #5CC6C9;
+    font-size: .9rem;
+    line-height: 1.8;
+    max-width: 650px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    display: block;
+  }
+
+@media (min-width: 800px) {
+
+.generic-content-container a {
+      font-size: 1rem
+  }
+	}
 
 .row::after {
 		content: "";
@@ -1030,4 +1065,22 @@ img {
 .portfolio-section__overlay-text {
         font-size: 2rem
     }
+	}
+
+footer {
+  background: #2F92D0;
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  font-size: .9rem;
+  line-height: 1.8;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 800px) {
+
+footer {
+    font-size: 1rem
+}
 	}

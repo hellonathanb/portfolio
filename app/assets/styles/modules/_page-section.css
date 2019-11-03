@@ -1,9 +1,12 @@
 .page-section {
-  padding: 2rem 0 1rem 0;
-  margin: 1rem 0 0 0;
+  padding: 2rem 0 3rem 0;
 
   @mixin atMedium {
     padding: 3rem 0 2rem 0;
-    margin: 1rem 0;
+  }
+
+  &--dark {
+    background-color: $mainGray;
+    margin-top: -5px;
   }
 }
