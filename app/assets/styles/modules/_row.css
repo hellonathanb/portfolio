@@ -50,12 +50,10 @@
 
 	}
 
-  @mixin atSmall {
-    &__small-6 {
+  &__small-6 {
 			float: left;
 			width: 50%;
-		}
-  }
+	}
 
   @mixin atMedium {
 		&__medium-4 {
