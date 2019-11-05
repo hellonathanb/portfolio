@@ -1,0 +1,44 @@
+.case-study {
+  padding-top: 60px;
+
+  @mixin atMedium {
+    padding-top: 100px;
+  }
+
+  &__header {
+    padding: 2rem 20px;
+    background-color: $lightGray;
+
+    @mixin atMedium {
+      padding: 5rem 1rem;
+    }
+
+    & h3 {
+      font-size: 1.75rem;
+      font-weight: 400;
+      text-align: center;
+      letter-spacing: .1rem;
+
+      @mixin atMedium {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  &__challenge {
+    padding: 2.5rem 0;
+
+    @mixin atMedium {
+      padding: 5rem 0;
+    }
+  }
+
+  &__image {
+    margin-left: -10px;
+    padding-bottom: 2.5rem;
+
+    @mixin atMedium {
+      padding-bottom: 5rem;
+    }
+  }
+}

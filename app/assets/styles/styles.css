@@ -12,4 +12,5 @@
 @import "modules/_generic-content-container";
 @import "modules/_row";
 @import "modules/_portfolio-section";
-@import "modules/_footer.css";
+@import "modules/_footer";
+@import "modules/_case-study";

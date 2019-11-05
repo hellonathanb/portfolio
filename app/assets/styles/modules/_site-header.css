@@ -3,6 +3,8 @@
   padding: 1rem 0;
   z-index: 2;
   position: absolute;
+  background-color: $mainGray;
+  height: 70px;
   transition: all .3s ease-out;
 
   &--is-expanded {
@@ -13,7 +15,8 @@
   @mixin atMedium {
     background-color: $mainGray;
     position: fixed;
-    padding: 2.375rem 0;
+    padding: 2rem 0;
+    height: auto;
 
     &--scroll {
       padding: 1rem 0;
@@ -23,10 +26,9 @@
   &__logo {
     width: 80px;
     float: left;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
 
     @mixin atMedium {
-      margin-bottom: 0;
       width: 100px;
     }
   }
@@ -35,8 +37,8 @@
 		width: 25px;
 		height: 19px;
 		position: absolute;
-		top: 15px;
-		right: 15px;
+		top: 25px;
+		right: 25px;
 		z-index: 10;
 
 		&::before {
@@ -96,10 +98,12 @@
 
   &__menu-content {
     opacity: 0;
-		z-index: -10;
-		position: relative;
+		z-index: -100;
+		position: absolute;
 		padding-top: 25%;
 		text-align: center;
+    width: 100%;
+    padding-right: 10%;
 		transition: all .3s ease-out;
 
 		@mixin atMedium {
@@ -107,6 +111,8 @@
 			z-index: 1;
 			padding-top: 0;
 			padding-bottom: 0;
+      padding-right: 0;
+      position: relative;
 		}
 
 		&--is-visible {

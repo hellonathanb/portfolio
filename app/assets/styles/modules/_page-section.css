@@ -9,4 +9,9 @@
     background-color: $mainGray;
     margin-top: -5px;
   }
+
+  &--case-study {
+    background-color: $lightGray;
+    padding-top: 50px;
+  }
 }

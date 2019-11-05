@@ -379,6 +379,8 @@ img {
   padding: 1rem 0;
   z-index: 2;
   position: absolute;
+  background-color: #2A2B2D;
+  height: 70px;
   transition: all .3s ease-out;
 }
 
@@ -392,7 +394,8 @@ img {
 .site-header {
     background-color: #2A2B2D;
     position: fixed;
-    padding: 2.375rem 0
+    padding: 2rem 0;
+    height: auto
 }
 
     .site-header--scroll {
@@ -403,13 +406,12 @@ img {
 .site-header__logo {
     width: 80px;
     float: left;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
   }
 
 @media (min-width: 800px) {
 
 .site-header__logo {
-      margin-bottom: 0;
       width: 100px
   }
 	}
@@ -418,8 +420,8 @@ img {
 		width: 25px;
 		height: 19px;
 		position: absolute;
-		top: 15px;
-		right: 15px;
+		top: 25px;
+		right: 25px;
 		z-index: 10;
 	}
 
@@ -491,10 +493,12 @@ img {
 
 .site-header__menu-content {
     opacity: 0;
-		z-index: -10;
-		position: relative;
+		z-index: -100;
+		position: absolute;
 		padding-top: 25%;
 		text-align: center;
+    width: 100%;
+    padding-right: 10%;
 		transition: all .3s ease-out;
   }
 
@@ -504,7 +508,9 @@ img {
 			opacity: 1;
 			z-index: 1;
 			padding-top: 0;
-			padding-bottom: 0
+			padding-bottom: 0;
+      padding-right: 0;
+      position: relative
   }
 	}
 
@@ -754,10 +760,15 @@ img {
     margin-top: -5px;
   }
 
+.page-section--case-study {
+    background-color: #E0E4E3;
+    padding-top: 50px;
+  }
+
 .section-title {
   font-family: aglet-sans, sans-serif;
   font-weight: 400;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   color: #2F92D0;
   margin-bottom: 0;
 }
@@ -773,6 +784,10 @@ img {
 
 .generic-content-container--p-t {
     padding-top: 1em;
+  }
+
+.generic-content-container--p-b {
+    padding-bottom: 1.5rem;
   }
 
 .generic-content-container--white {
@@ -816,7 +831,7 @@ img {
 
 .generic-content-container h2 {
     font-family: aglet-sans, sans-serif;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     color: #2F92D0;
     font-weight: 400;
     margin-top: 1.5rem;
@@ -846,15 +861,41 @@ img {
     line-height: 1.8;
     max-width: 650px;
     margin-top: 0;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    display: block;
+    display: inline-block;
   }
 
 @media (min-width: 800px) {
 
 .generic-content-container a {
       font-size: 1rem
+  }
+	}
+
+.generic-content-container ul {
+    padding-left: 0;
+    list-style: none;
+    padding-top: 0;
+  }
+
+@media (min-width: 800px) {
+
+.generic-content-container ul {
+      padding-top: .75rem
+  }
+	}
+
+.generic-content-container li {
+    font-size: .9rem;
+    line-height: 1.8;
+    font-weight: 400;
+    letter-spacing: .05rem;
+  }
+
+@media (min-width: 800px) {
+
+.generic-content-container li {
+      font-size: 1rem;
+      font-weight: 600
   }
 	}
 
@@ -948,6 +989,11 @@ img {
 	}
 
 @media (min-width: 800px) {
+    .row__medium-2 {
+        float: left;
+        width: 16.6667%;
+    }
+
 		.row__medium-4 {
 			float: left;
 			width: 33.33%;
@@ -1014,11 +1060,6 @@ img {
                 transform: translate(-50%, -50%);
       }
 
-.portfolio-section__thumbnail {
-
-
-  }
-
 .portfolio-section__image {
     display: block;
     position: relative;
@@ -1067,6 +1108,11 @@ img {
     }
 	}
 
+.portfolio-section__overlay-text--small {
+        font-size: 1.25rem;
+        line-height: 1.5;
+      }
+
 footer {
   background: #2F92D0;
   padding: 1rem;
@@ -1083,4 +1129,64 @@ footer {
 footer {
     font-size: 1rem
 }
+	}
+
+.case-study {
+  padding-top: 60px;
+}
+
+@media (min-width: 800px) {
+
+.case-study {
+    padding-top: 100px
+}
+	}
+
+.case-study__header {
+    padding: 2rem 20px;
+    background-color: #E0E4E3;
+  }
+
+@media (min-width: 800px) {
+
+.case-study__header {
+      padding: 5rem 1rem
+  }
+	}
+
+.case-study__header h3 {
+      font-size: 1.75rem;
+      font-weight: 400;
+      text-align: center;
+      letter-spacing: .1rem;
+    }
+
+@media (min-width: 800px) {
+
+.case-study__header h3 {
+        font-size: 2.5rem
+    }
+	}
+
+.case-study__challenge {
+    padding: 2.5rem 0;
+  }
+
+@media (min-width: 800px) {
+
+.case-study__challenge {
+      padding: 5rem 0
+  }
+	}
+
+.case-study__image {
+    margin-left: -10px;
+    padding-bottom: 2.5rem;
+  }
+
+@media (min-width: 800px) {
+
+.case-study__image {
+      padding-bottom: 5rem
+  }
 	}

@@ -4,6 +4,10 @@
     padding-top: 1em;
   }
 
+  &--p-b {
+    padding-bottom: 1.5rem;
+  }
+
   &--white {
     color: #fff;
   }
@@ -40,7 +44,7 @@
 
   h2 {
     font-family: aglet-sans, sans-serif;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     color: $mainBlue;
     font-weight: 400;
     margin-top: 1.5rem;
@@ -67,13 +71,33 @@
     line-height: 1.8;
     max-width: 650px;
     margin-top: 0;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    display: block;
+    display: inline-block;
 
     @mixin atMedium {
       font-size: 1rem;
 
+    }
+  }
+
+  ul {
+    padding-left: 0;
+    list-style: none;
+    padding-top: 0;
+
+    @mixin atMedium {
+      padding-top: .75rem;
+    }
+  }
+
+  li {
+    font-size: .9rem;
+    line-height: 1.8;
+    font-weight: 400;
+    letter-spacing: .05rem;
+
+    @mixin atMedium {
+      font-size: 1rem;
+      font-weight: 600;
     }
   }
 }

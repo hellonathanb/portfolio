@@ -17,11 +17,6 @@
 
   }
 
-  &__thumbnail {
-
-
-  }
-
   &__image {
     display: block;
     position: relative;
@@ -59,6 +54,11 @@
 
       @mixin atMedium {
         font-size: 2rem;
+      }
+
+      &--small {
+        font-size: 1.25rem;
+        line-height: 1.5;
       }
     }
   }
