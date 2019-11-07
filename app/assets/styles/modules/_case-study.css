@@ -5,6 +5,10 @@
     padding-top: 100px;
   }
 
+  &--gray {
+    background-color: $lightGray;
+  }
+
   &__header {
     padding: 2rem 20px;
     background-color: $lightGray;
@@ -34,7 +38,8 @@
   }
 
   &__image {
-    margin-left: -10px;
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 2.5rem;
 
     @mixin atMedium {

@@ -7,7 +7,6 @@
 
   &--dark {
     background-color: $mainGray;
-    margin-top: -5px;
   }
 
   &--case-study {

@@ -757,7 +757,6 @@ img {
 
 .page-section--dark {
     background-color: #2A2B2D;
-    margin-top: -5px;
   }
 
 .page-section--case-study {
@@ -1046,8 +1045,8 @@ img {
     position: relative;
     top: 0;
     left: 0;
+    line-height: 0;
     overflow: hidden;
-    margin-top: -3px;
 
   }
 
@@ -1056,8 +1055,8 @@ img {
     }
 
 .portfolio-section__container:hover .portfolio-section__overlay-text {
-        -webkit-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
+        -webkit-transform: translate(-49%, -49%);
+                transform: translate(-49%, -49%);
       }
 
 .portfolio-section__image {
@@ -1076,7 +1075,6 @@ img {
     background-color: #E0E4E3;
     opacity: 0;
     transition: all .5s ease-out;
-    margin-top: -2px;
   }
 
 .portfolio-section__overlay-text {
@@ -1087,10 +1085,11 @@ img {
       font-family: acumin-pro, sans-serif;
       font-weight: 600;
       font-size: 1.25rem;
+      line-height: 1.5rem;
       text-decoration: none;
       color: #FFF;
-      -webkit-transform: translate(-50%, -25%);
-              transform: translate(-50%, -25%);
+      -webkit-transform: translate(-49%, -24%);
+              transform: translate(-49%, -24%);
       transition: all .5s ease-out;
     }
 
@@ -1104,7 +1103,8 @@ img {
 @media (min-width: 800px) {
 
 .portfolio-section__overlay-text {
-        font-size: 2rem
+        font-size: 2rem;
+        line-height: 2.5rem
     }
 	}
 
@@ -1141,6 +1141,10 @@ footer {
     padding-top: 100px
 }
 	}
+
+.case-study--gray {
+    background-color: #E0E4E3;
+  }
 
 .case-study__header {
     padding: 2rem 20px;
@@ -1180,7 +1184,8 @@ footer {
 	}
 
 .case-study__image {
-    margin-left: -10px;
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 2.5rem;
   }
 
