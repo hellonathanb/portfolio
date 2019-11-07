@@ -1,6 +1,10 @@
 .row {
   @mixin clearfix;
 
+  &--line-height {
+    line-height: 0;
+  }
+
   &--gutters {
 		margin-right: 0;
 
@@ -61,6 +65,11 @@
         width: 16.6667%;
     }
 
+    &__medium-3 {
+      float: left;
+      width: 25%;
+    }
+
 		&__medium-4 {
 			float: left;
 			width: 33.33%;
@@ -75,6 +84,16 @@
 			float: left;
 			width: 66.66%;
 		}
+
+    &__medium-9 {
+      float: left;
+			width: 75%;
+    }
+
+    &__medium-12 {
+      float: left;
+      width: 100%;
+    }
 	}
 
 	@mixin atLarge {
