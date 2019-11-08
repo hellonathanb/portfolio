@@ -1,8 +1,9 @@
 {
-  "name": "catering-site",
+  "name": "nbeck-portfolio",
   "version": "1.0.0",
   "dependencies": {
     "jquery": "^3.3.1",
+    "jquery-smooth-scroll": "^2.2.0",
     "lazysizes": "^4.1.6",
     "normalize.css": "^8.0.1",
     "picturefill": "^3.0.3",

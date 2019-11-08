@@ -15,11 +15,11 @@
   @mixin atMedium {
     background-color: $mainGray;
     position: fixed;
-    padding: 2rem 0;
+    padding: 2rem 0 1rem 0;
     height: auto;
 
     &--scroll {
-      padding: 1rem 0;
+      padding: 1rem 0 .2rem 0;
     }
   }
 
@@ -27,6 +27,7 @@
     width: 80px;
     float: left;
     margin-bottom: 0;
+
 
     @mixin atMedium {
       width: 100px;
@@ -113,6 +114,7 @@
 			padding-bottom: 0;
       padding-right: 0;
       position: relative;
+
 		}
 
 		&--is-visible {
@@ -127,7 +129,7 @@
 
     @mixin atMedium {
       float: right;
-      margin-top: .75rem;
+      margin-top: .2rem;
     }
   }
 }

@@ -1,4 +1,5 @@
 .btn {
+  display: inline-block;
   text-decoration: none;
   color: $mainBlue;
   font-weight: 600;
@@ -18,18 +19,14 @@
     background-color: rgba($mainBlue, .20);
   }
 
-  &--solid {
-    display: block;
-    text-align: center;
-    width: 250px;
-    margin: 0 auto 2rem auto;
+  &--m {
+    margin-bottom: .5rem;
+    margin-top: 1rem;
 
-    @mixin atSmall {
-      margin-bottom: 0;
-    }
-
-    &:hover {
-      background-color: rgba($mainBlue, .20);
+    @mixin atMedium {
+      margin-bottom: 2rem;
+      margin-top: .5rem;
+      margin-left: -.3rem;
     }
   }
 }

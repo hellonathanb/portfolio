@@ -59,6 +59,11 @@
 			width: 50%;
 	}
 
+  &__small-4 {
+    float: left;
+    width: 33.33%;
+  }
+
   @mixin atMedium {
     &__medium-2 {
         float: left;

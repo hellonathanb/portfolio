@@ -25,7 +25,7 @@
     <header class="site-header">
       <div class="wrapper">
         <div class="site-header__logo">
-          <a href="index.html"><img src="assets/images/svg/nb-dino-icon.svg" alt="Nathan Beck Creative"></a>
+          <a href="#home" id="home-link"><img src="assets/images/svg/nb-dino-icon.svg" alt="Nathan Beck Creative"></a>
         </div>
         <div class="site-header__menu-icon">
   				<div class="site-header__menu-icon__middle"></div>
@@ -36,13 +36,13 @@
     				</div>
     				<nav class="primary-nav primary-nav--pull-right">
     					<ul>
-    						<li><a href="work.html">My Work</a></li>
+    						<li><a href="#work" id="work-link">My Work</a></li>
     					</ul>
     				</nav>
         </div>
       </div>
     </header>
-    <div class="about-block">
+    <div id="home" class="about-block scroll" data-matching-link="#home-link">
       <div class="wrapper">
         <div class="about-block__intro-content">
           <p> Hello there! I am Nathan, an Arkansas based designer and web developer whose passion is solving problems with beautiful design.</p>
@@ -77,19 +77,10 @@
             </div>
           </div>
         </div>
+        <a class="btn btn--m" href="assets/images/PDF/NB-Resume-2019.pdf" target="_blank">View Resume</a>
       </div>
     </div>
-    <div class="generic-content-container__btn-container">
-      <div class="row row--gutters--small">
-        <div class="row__medium-6">
-          <a class="btn btn--solid" href="#">View Resume</a>
-        </div>
-        <div class="row__medium-6">
-          <a class="btn btn--solid" href="#">View Portfolio</a>
-        </div>
-      </div>
-    </div>
-    <div id="portfolio-thumbnails" class="portfolio-section">
+    <div id="work" class="portfolio-section scroll" data-matching-link="#work-link">
       <div class="row">
         <div class="row__medium-4 row__small-6">
           <div class="portfolio-section__container">

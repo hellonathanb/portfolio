@@ -4,5 +4,4 @@ import $ from 'jquery';
 import StickyHeader from './modules/StickyHeader';
 
 var mobileMenu = new MobileMenu();
-new RevealOnScroll($(".service"), "85%");
 var stickyHeader = new StickyHeader();
