@@ -1,0 +1,137 @@
+.contact {
+  background: $mainGray;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 0;
+
+  @mixin atMedium {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-top: 2rem;
+  }
+
+  label {
+    display:inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    padding-bottom: 7px;
+    margin-top: 30px;
+    color: #FFF;
+  }
+
+  &__select {
+    position: relative;
+  }
+
+    &__select:after {
+     content: '\f107';
+     font: normal normal normal 1rem/1 FontAwesome;
+     color: #FFF;
+     right: 70px;
+     top: 70px;
+     padding: 5px 0px 5px 15px;
+     border-left: 2px solid #FFF;
+     position: absolute;
+     pointer-events: none;
+
+     @mixin atMedium {
+       font: normal normal normal 1.5rem/1 FontAwesome;
+       right: 118px;
+       top: 68px;
+       padding: 3px 0px 3px 15px;
+     }
+  }
+
+  select {
+    width: 100%;
+    padding: 16px 16px;
+    border-radius: 5px;
+    border: 2px solid $mainBlue;
+    -ms-word-break: normal;
+    word-break: normal;
+    appearance: none;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+
+      &::-ms-expand {
+       display: none;
+     }
+  }
+
+  option {
+    color: $mainGray;
+  }
+
+  input{
+    width: 100%;
+    padding: 16px 16px;
+    border-radius: 5px;
+    border: 2px solid $mainBlue;
+    background-color: transparent;
+    color: #FFF;
+  }
+
+  textarea {
+    height: 150px;
+    resize: none;
+    width: 100%;
+    padding: 16px 16px;
+    border-radius: 5px;
+    border: 2px solid $mainBlue;
+    color: #FFF;
+    background-color: transparent;
+
+    &:focus {
+      outline-width: 0;
+      background-color: rgba($mainBlue, .3);
+    }
+  }
+
+  input[type=text] {
+    color: #FFF;
+    transition: all .3s ease-out;
+    background-color: transparent;
+  }
+
+  input[type=text]:focus {
+    outline-width: 0;
+    background-color: rgba($mainBlue, .3);
+  }
+
+  input[type=email] {
+    background-color: transparent;
+    color: #FFF;
+  }
+
+  input[type=email]:focus {
+    outline-width: 0;
+    background-color: rgba($mainBlue, .3);
+  }
+
+  input[type=submit] {
+      display: inline-block;
+      text-decoration: none;
+      color: $mainBlue;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      border: 2px solid $mainBlue;
+      padding: .5rem 1.5rem;
+      border-radius: 25px;
+      font-size: .9rem;
+      cursor: pointer;
+      background-color: transparent;
+      width: auto;
+      margin-top: 2rem;
+      transition: background-color .3s ease-out;
+
+      @mixin atMedium {
+        font-size: 1rem;
+      }
+
+      &:hover {
+        background-color: rgba($mainBlue, .20);
+      }
+  }
+}

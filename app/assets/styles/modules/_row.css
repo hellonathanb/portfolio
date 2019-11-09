@@ -5,6 +5,14 @@
     line-height: 0;
   }
 
+  &--display {
+    display: none;
+
+    @mixin atMedium {
+      display: block;
+    }
+  }
+
   &--gutters {
 		margin-right: 0;
 
