@@ -24,6 +24,8 @@ gulp.task('copyGeneralFiles', ['deleteDistFolder'], function() {
   var pathsToCopy = [
     './app/**/*',
     '!./app/index.html',
+    '!./app/portfolio/*.html',
+    '!./app/contact/*.html',
     '!./app/assets/images/**',
     '!./app/assets/styles/**',
     '!./app/assets/scripts/**',
@@ -36,7 +38,7 @@ gulp.task('copyGeneralFiles', ['deleteDistFolder'], function() {
 });
 
 gulp.task('optimizeImages', ['deleteDistFolder'], function() {
-  return gulp.src('././app/assets/images/**/*')
+  return gulp.src('./app/assets/images/**/*')
     .pipe(imagemin({
       progressive: true,
       interlaced: true,
@@ -45,7 +47,7 @@ gulp.task('optimizeImages', ['deleteDistFolder'], function() {
     .pipe(gulp.dest("./docs/assets/images"));
 });
 
-gulp.task('usemin', ['deleteDistFolder', 'styles', 'scripts'], function() {
+gulp.task('usemin-index', ['deleteDistFolder', 'styles', 'scripts'], function() {
   return gulp.src("./app/index.html")
     .pipe(usemin({
       css: [function() {return rev()}, function() {return cssnano()}],
@@ -54,4 +56,22 @@ gulp.task('usemin', ['deleteDistFolder', 'styles', 'scripts'], function() {
     .pipe(gulp.dest("./docs"));
 });
 
-gulp.task('build', ['deleteDistFolder','copyGeneralFiles', 'optimizeImages', 'usemin']);
+gulp.task('usemin-portfolio', ['usemin-index'], function() {
+  return gulp.src("./app/portfolio/*.html")
+    .pipe(usemin({
+      css: [function() {return rev()}, function() {return cssnano()}],
+      js: [function() {return rev()}, function() {return uglify()}]
+    }))
+    .pipe(gulp.dest("./docs/portfolio"));
+});
+
+gulp.task('usemin-contact', ['usemin-portfolio'], function() {
+  return gulp.src("./app/contact/*.html")
+    .pipe(usemin({
+      css: [function() {return rev()}, function() {return cssnano()}],
+      js: [function() {return rev()}, function() {return uglify()}]
+    }))
+    .pipe(gulp.dest("./docs/contact"));
+});
+
+gulp.task('build', ['deleteDistFolder','copyGeneralFiles', 'optimizeImages', 'usemin-index', 'usemin-portfolio', 'usemin-contact']);
