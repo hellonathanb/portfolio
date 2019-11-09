@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.typekit.net/gqc1tev.css">
-    <title>Nathan Beck // Designer & Developer</title>
+    <title>Nathan Beck // Designer & Developer</title>    
     <meta name="keywords" content="graphic designer, web designer, arkansas">
   	<meta name="description" content="Arkansas based graphic designer and web developer.">
     <link rel="shortcut icon" href="../favicon.png" type="image/png">
@@ -13,6 +13,7 @@
   	<meta property="og:image" content="https://hellonathanb.github.io/portfolio-site/assets/images/share-card.jpg">
   	<meta property="og:url" content="https://hellonathanb.github.io/portfolio-site">
   	<meta property="twitter:card" content="summary_large_image">
+    <script src="https://kit.fontawesome.com/ffe97a7615.js" crossorigin="anonymous"></script>
     <!-- build:css assets/styles/styles.css -->
   	<link rel="stylesheet" type="text/css" href="../temp/styles/styles.css">
   	<!-- endbuild -->
@@ -44,34 +45,65 @@
     </header>
     <div id="Case Study" class="case-study">
       <div class="case-study__header">
-        <h3>Coastal Counseling</h3>
+        <h3>Let's Chat</h3>
       </div>
+    </div>
+    <div id="Get in Touch" class="page-section">
       <div class="wrapper">
-        <div class="row row--gutters case-study__challenge">
+        <div class="row row--gutters">
           <div class="row__medium-8">
             <div class="generic-content-container">
-              <h1 class="section-title">The Challenge</h1>
-              <p class="generic-content-container--p-t"><a href="https://coastalcounselingservice.com/" target="_blank">Coastal Counseling</a> began offering therapy sessions for clients solely online in June 2019. After creating a temporary web solution themselves, they contacted me. While I was tasked with a web design overhaul, they opted for visual updates to their brand identity as well. The main challenge was to appeal to potential clients with a calming, easy to navigate web experience, while also displaying the information in a way that lets clients know exactly what they will be getting into.</p>
+              <h1 class="section-title">Getting in touch</h1>
+              <p>Interested in working together? Shoot me an email using the form below, and let's talk!</p>
             </div>
           </div>
-          <div class="row__medium-4">
+          <div class="row__medium-4 row--display">
             <div class="generic-content-container">
-              <h2>Project Scope</h2>
-              <ul>
-                <li>Brand Identity Refresh</li>
-                <li>Asset Development</li>
-                <li>Web Design</li>
-                <li>SEO Tune Up</li>
-                <li>Photo Editing</li>
-              </ul>
+              <h2>Connect</h2>
+              <h6 class="generic-content-container--p-t">Phone</h6>
+              <a class="generic-content-container--p-b" href="tel:4792853208">479.285.3208</a>
+              <h6>Email</h6>
+              <a href="mailto: nbeckcreative@gmail.com">nbeckcreative@gmail.com</a>
             </div>
           </div>
         </div>
-        <div class="">
-          <picture>
-            <img srcset="../assets/images/CoastalCounseling-SiteMock.jpg 1332w, ../assets/images/CoastalCounseling-SiteMock@2x.jpg 2664w" alt="Coastal Counseling website screenshots." class="case-study__image">
-          </picture>
-        </div>
+      </div>
+    </div>
+    <div id="Contact" class="contact">
+      <div class="wrapper">
+        <form method="post" action="contactengine.php">
+          <div class="row row--gutters--small">
+            <div class="row__medium-6">
+              <label for="Name">Full Name*</label>
+              <input type="text" name="visitor_name" id="Name" />
+            </div>
+            <div class="row__medium-6">
+              <label for="Email">Email*</label>
+              <input type="email" name="visitor_email" id="Email" />
+            </div>
+            <div class="row__medium-6">
+              <label for="Tel">Phone (Optional)</label>
+              <input type="text" name="Tel" id="Tel" />
+            </div>
+            <div class="row__medium-6 contact__select">
+              <label for="email_title">How can I help?*</label>
+              <select name="email_title" id="web_traffic">
+                <option value="select">Please Select One</option>
+                <option value="visual-identity">Identity Design</option>
+                <option value="web-design">Web Design</option>
+                <option value="social-media">Social Media Management</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div>
+              <label for="Message">Message*</label><br />
+              <textarea name="visitor_message" id="Message"></textarea>
+            </div>
+            <div>
+              <input type="submit" value="Send Message"/>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
     <div id="portfolio-thumbnails" class="portfolio-section">
@@ -128,28 +160,6 @@
                 <div class="portfolio-section__overlay-text portfolio-section__overlay-text--small">Beyond the Border</div>
               </div>
             </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="Contact" class="page-section page-section--dark">
-      <div class="wrapper">
-        <div class="row row--gutters">
-          <div class="row__medium-8">
-            <div class="generic-content-container">
-              <h1 class="section-title">Let's get to work!</h1>
-              <p class="generic-content-container--p-t generic-content-container--white">Listen, I like you, you like me, let's stop this little dance of ours and crush these project deadlines!</p>
-              <p class="generic-content-container--white">Seriously though, hire me. Please. It's dark in here.</p>
-            </div>
-          </div>
-          <div class="row__medium-4">
-            <div class="generic-content-container">
-              <h2>Connect</h2>
-              <h6 class="generic-content-container--p-t generic-content-container--white">Phone</h6>
-              <a class="generic-content-container--p-b" href="tel:4792853208">479.285.3208</a>
-              <h6 class="generic-content-container--white">Email</h6>
-              <a href="mailto: nbeckcreative@gmail.com">nbeckcreative@gmail.com</a>
-            </div>
           </div>
         </div>
       </div>
